@@ -1,34 +1,30 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hilary Mary Souza Viana - Consultoria Previdenciária</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Consultoria Previdenciária - Hilary Mary Souza Viana</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+
     <header>
         <h1>Hilary Mary Souza Viana</h1>
-        <p>Consultoria Previdenciária</p>
-        <nav>
-            <ul>
-                <li><a href="#servicos">Serviços</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
+        <p>Consultoria Previdenciária Especializada</p>
     </header>
 
-    <section id="hero">
-        <div class="hero-content">
-            <h2>Consultoria Especializada em Previdência</h2>
-            <p>Resolva suas dúvidas e encontre soluções para aposentadoria e benefícios.</p>
-            <a href="#contato" class="btn">Entre em Contato</a>
-        </div>
+    <section class="hero-content">
+        <h2>Consultoria Especializada em Previdência</h2>
+        <p>Responda suas dúvidas e encontre soluções para aposentadoria e benefícios do INSS.</p>
+        <a href="#contato" class="cta-button">Entre em Contato</a>
     </section>
 
     <section id="servicos">
-        <h2>Serviços</h2>
+        <h3>Serviços</h3>
         <ul>
             <li>Consultoria para aposentadoria</li>
             <li>Auxílio doença</li>
@@ -38,31 +34,35 @@
     </section>
 
     <section id="sobre">
-        <h2>Sobre Mim</h2>
+        <h3>Sobre Mim</h3>
         <p>Olá, sou Hilary Mary Souza Viana, estudante de Direito na PUC-GO e especialista em consultoria previdenciária. Estou aqui para ajudar você a entender seus direitos e aproveitar ao máximo os benefícios do INSS.</p>
     </section>
 
     <section id="contato">
-        <h2>Contato</h2>
-        <p>Entre em contato para uma consultoria personalizada.</p>
-        <form>
+        <h3>Contato</h3>
+        <!-- Formulário de contato enviando dados para sendmail.php -->
+        <form action="sendmail.php" method="POST">
             <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome">
+            <input type="text" id="nome" name="nome" required>
+
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email">
+            <input type="email" id="email" name="email" required>
+
             <label for="mensagem">Mensagem:</label>
-            <textarea id="mensagem" name="mensagem"></textarea>
+            <textarea id="mensagem" name="mensagem" required></textarea>
+
             <button type="submit">Enviar</button>
         </form>
     </section>
 
-    <!-- Botão Flutuante do WhatsApp -->
-    <a href="https://wa.me/5562984947011?text=Olá, eu gostaria de agendar uma consulta!" class="whatsapp-float" target="_blank">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+    <footer>
+        <p>© 2024 Hilary Mary Souza Viana - Todos os direitos reservados</p>
+    </footer>
+
+    <!-- Botão flutuante do WhatsApp -->
+    <a href="https://api.whatsapp.com/send?phone=5511999999999" class="whatsapp-float" target="_blank">
+        <img src="whatsapp-icon.png" alt="WhatsApp">
     </a>
 
-    <footer>
-        <p>&copy; 2024 Hilary Mary Souza Viana - Todos os direitos reservados</p>
-    </footer>
 </body>
 </html>
