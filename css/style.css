@@ -1,24 +1,19 @@
-/* Estilos Gerais */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f8e8d5; /* Cor de fundo clara e quente */
-    color: #333; /* Texto escuro */
-}
-
-h1, h2 {
-    color: #4b3c2a; /* Cor de texto mais escura */
+    background-color: #f8f9fa; /* Cor de fundo suave */
 }
 
 header {
-    background-color: #f2c6a0; /* Cor de fundo do cabeçalho */
-    padding: 10px 0;
+    background-color: #6c757d; /* Cor de fundo do cabeçalho */
+    color: white;
+    padding: 20px;
     text-align: center;
 }
 
 nav ul {
-    list-style-type: none;
+    list-style: none;
     padding: 0;
 }
 
@@ -28,49 +23,17 @@ nav ul li {
 }
 
 nav ul li a {
+    color: white;
     text-decoration: none;
-    color: #4b3c2a; /* Cor do link */
 }
 
 section {
     padding: 20px;
-    margin: 20px;
-    background-color: #fff; /* Seções brancas para contraste */
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-/* Seção Contato */
-form {
-    max-width: 400px;
-    margin: 0 auto;
-    text-align: left;
-}
-
-input, textarea {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-button {
-    background-color: #7a5d4a; /* Cor do botão */
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #6b4b39; /* Cor do botão ao passar o mouse */
 }
 
 footer {
-    background-color: #3f3f3f; /* Cor do fundo do rodapé */
-    color: white;
     text-align: center;
-    padding: 10px 0;
-    margin-top: 20px;
+    padding: 20px;
+    background-color: #6c757d; /* Cor de fundo do rodapé */
+    color: white;
 }
